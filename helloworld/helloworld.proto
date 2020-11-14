@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package helloworld;
+
+option go_package="github.com/toppyoushi/cms_apis/helloworld;helloworld";
+
+message HelloReq {
+    string msg = 1;
+}
+
+message HelloRsp {
+    string msg = 1;
+}
+
+service Greeter {
+    rpc SayHello(HelloReq) returns (HelloRsp) {}
+}
