@@ -2,10 +2,10 @@ syntax = "proto3";
 
 package helloworld;
 
-option go_package="github.com/toppyoushi/cms_apis/helloworld;helloworld";
+option go_package="github.com/toppyoushi/grpc-apis/pkg/helloworld;helloworld";
 
 message HelloReq {
-    string msg = 1;
+    string msg = 2;
 }
 
 message HelloRsp {

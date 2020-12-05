@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package helloworld;
+
+option go_package="github.com/toppyoushi/grpc-apis/pkg/helloworld;helloworld";
+
+enum ErrorCode {
+  OK = 0;
+}
+
+message Error{
+  string code = 1;
+  string message = 2;
+  string details = 3;
+}
